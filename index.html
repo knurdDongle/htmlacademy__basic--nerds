@@ -8,12 +8,13 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__logo">
-      <a class="header__logo-link header__logo-link--current" href="index.html">Веб-студия Nerds
-      <img class="header__logo-pic" src="" alt="Логотип Веб-студия Nerds" width="" height="">
-      </a>
-    </div>
     <nav class="header__nav navigation">
+      <div class="navigation__logo">
+        <a class="navigation__logo-link header__logo-link--current" href="index.html">
+          Веб-студия Nerds
+          <img class="navigation__logo-pic" src="" alt="Логотип Веб-студия Nerds" width="" height="">
+        </a>
+      </div>
       <ul class="navigation__list">
         <li class="navigation__element">
           <a class="navigation__link" href="">Студия</a>
@@ -74,7 +75,7 @@
         </li>
       </ul>
     </section>
-    <div class="features__box">
+    <section class="features__box">
       <section class="features__text">
         <p class="features__lead">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
         <p class="features__desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -88,20 +89,63 @@
       <section class="features__logo-table">
         <img class="features__logo-pic" src="" alt="Веб-студия Nerds логотип" width="" height="">
         <p class="features__table-title">С 2004 года любим точность во всем:</p>
-        <table>
-          <tr>
-            <td>146%</td>
-            <td>100%</td>
-            <td>50%</td>
+        <table class="features__table table">
+          <tr class="table__persent">
+            <td class="table__cell">146%</td>
+            <td class="table__cell">100%</td>
+            <td class="table__cell">50%</td>
           </tr>
-          <tr>
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
+          <tr class="table__desc">
+            <td class="table__cell">Уровень самоотдачи</td>
+            <td class="table__cell">Соблюдение сроков</td>
+            <td class="table__cell">Минимальная предоплата</td>
           </tr>
         </table>
       </section>
-    </div>
+    </section>
+    <section class="clients">
+      <ul class="clients__list">
+        <li class="clients__elem"><img src="img/" alt="Сайт htmlacademy" width="" height=""></li>
+        <li class="clients__elem"><img src="img/" alt="Барбершоп Бородинский" width="" height=""></li>
+        <li class="clients__elem"><img src="img/" alt="Сайт приложения Пинк" width="" height=""></li>
+        <li class="clients__elem"><img src="img/" alt="Сайт магазина Мишка" width="" height=""></li>
+      </ul>
+    </section>
+    <section class="contacts">
+      <img class="contacts__map-pic" src="" alt="191186, Санкт-Петербург,
+      ул. Б. Конюшенная, д. 19/8" width="" height="">
+      <img class="contacts__map-pointer" src="" alt="Указатель">
+
+      <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1062.9787663996383!2d37.16712875195519!3d56.738623722642764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1523977721023" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>   
+
+      <div class="contacts__textbox">
+        <h3 class="contacts__subtitle">Nёrds design studio</h3>
+        <p class="contacts__adress">
+          191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p class="contacts__tel">
+          тел.
+          <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+        </p>
+        <button class="contacts__btn">Напишите нам</button>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <ul class="footer__social social-list">
+      <li class="social-list__elem">
+        <a class="social-list__link social-list__link--vk" href="">Вконтакте</a>
+      </li>
+      <li class="social-list__elem">
+        <a class="social-list__link social-list__link--fb" href="">Фейсбук</a>
+      </li>
+      <li class="social-list__elem">
+        <a class="social-list__link social-list__link--inst" href="">Инстаграмм</a>
+      </li>
+    </ul>
+    <p class="footer__lead">Давайте дружить, это выгодно!</p>
+    <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
+  </footer>
 </body>
 </html>
