@@ -7,14 +7,18 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+
   <header class="header">
+
     <nav class="header__nav navigation">
+
       <div class="navigation__logo">
         <a class="navigation__logo-link header__logo-link--current" href="index.html">
           Веб-студия Nerds
           <img class="navigation__logo-pic" src="" alt="Логотип Веб-студия Nerds" width="" height="">
         </a>
       </div>
+
       <ul class="navigation__list">
         <li class="navigation__element">
           <a class="navigation__link" href="">Студия</a>
@@ -29,35 +33,226 @@
           <a class="navigation__link" href="">Контакты</a>
         </li>
       </ul>
+
     </nav>
+
     <div class="header__basket">
       <a class="header__basket-link" href="#">Корзина</a>
     </div>
-  </header>
-  <main class="catalog">
-    <h1 class="catalog__title">Магазин готовых шаблонов</h1>
-    <div class="catalog__container">
-      <div class="catalog__left-column">
-        <h2 class="catalog__title">Фильтр товаров</h2>
-        <form class="catalog__form form-filter" action="" method="get">
-          <h3>Стоимость:</h3>
-          <div class="form-filter__range-container">
-            <div class="form-filter__range-box">
 
+  </header>
+
+  <main class="catalog">
+
+    <h1 class="catalog__title">Магазин готовых шаблонов</h1>
+
+    <div class="catalog__container">
+
+      <div class="catalog__left-column">
+        <h2 class="catalog__subtitle catalog__subtitle--visually-hidden">Фильтр работ</h2>
+        <form class="catalog__form form-filter" action="" method="get">
+
+          <fieldset class="form-filter__price-field">
+            <legend class="form-filter__subtitle">Стоимость:</legend>
+            <div class="form-filter__range-line-box">
             </div>
-            <p>
-              <label for="min-price">От</label>
-              <input type="number" name="min-price" id="min-price">
-              <label for="max-price">До</label>
-              <input type="number" name="max-price" id="max-price">
+            <p class="form-filter__price">
+              <label class="form-filter__label-price" for="min-price">От</label>
+              <input class="form-filter__input-price" id="min-price" type="number" name="min-price" placeholder="0">
+              <label class="form-filter__label-price" for="max-price">До</label>
+              <input class="form-filter__input-price" id="max-price" type="number" name="max-price" placeholder="15000">
             </p>
-          </div>
+          </fieldset>
+
+          <fieldset class="form-filter__layout-field">
+            <legend class="form-filter__subtitle">Сетка:</legend>
+            <div class="form-filter__layout">
+              <p class="form-filter__adaptive">
+                <label class="form-filter__label-adaptive" for="adaptive">Адаптивный</label>
+                <input type="radio" id="adaptive" name="layout" value="adaptive" checked>
+              </p>
+              <p class="form-filter__fix">
+                <label class="form-filter__label-fix" for="fix">Фиксированная</label>
+                <input type="radio" id="fix" name="layout" value="fix">
+              </p>
+              <p class="form-filter__rubber">
+                <label class="form-filter__label-rubber" for="rubber">Резиновая</label>
+                <input type="radio" id="rubber" name="layout" value="rubber">
+              </p>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-filter__features-field">
+            <legend class="form-filter__subtitle">Особенности:</legend>
+            <p class="form-filter__slider-feature">
+              <label class="form-filter__label-slider" for="slider">Слайдер</label>
+              <input type="checkbox" id="slider" name="slider" checked>
+            </p>
+            <p class="form-filter__advantage-feature">
+              <label class="form-filter__label-advantage" for="advantage">Блок преимуществ</label>
+              <input type="checkbox" id="advantage" name="advantage">
+            </p>
+            <p class="form-filter__news-feature">
+              <label class="form-filter__label-news" for="news">Новости</label>
+              <input type="checkbox" id="news" name="news" checked>
+            </p>
+            <p class="form-filter__gallery-feature">
+              <label class="form-filter__label-gallery" for="gallery">Галерея</label>
+              <input type="checkbox" id="gallery" name="gallery">
+            </p>
+            <p class="form-filter__basket-feature">
+              <label class="form-filter__label-basket" for="basket">Корзина</label>
+              <input type="checkbox" id="basket" name="basket">
+            </p>
+          </fieldset>
+
+          <button type="submit">Показать</button>
+
         </form>
       </div>
+
       <div class="catalog__right-column">
+        <h2 class="catalog__subtitle catalog__subtitle">Примеры работ</h2>
+
+        <section class="catalog__sort-links sorting-box">
+          <h3 class="sorting-box__title">Сортировка</h3>
+
+          <ul class="sorting-box__list">
+            <li class="sorting-box__elem">
+              <a class="sorting-box__link" href="">По цене</a>
+            </li>
+            <li class="sorting-box__elem">
+              <a class="sorting-box__link" href="">По типу</a>
+            </li>
+            <li class="sorting-box__elem">
+              <a class="sorting-box__link" href="">По названию</a>
+            </li>
+            <li class="sorting-box__elem">
+              <a class="sorting-box__link" href="">По убыванию</a>
+            </li>
+            <li class="sorting-box__elem">
+              <a class="sorting-box__link" href="">По возрастанию</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="catalog__products">
+
+          <div class="catalog__item card-product">
+            <svg></svg>
+            <img class="card-product__pic" src="img/" alt="Сайт местечка Седона" width="" height="">
+            <div class="card-product__desc-box">
+              <h4 class="card-product__name">Sedona</h4>
+              <p class="card-product__desc">Информационный сайт для туристов</p>
+              <a class="card-product__buy-link" href="">9 900 руб.</a>
+            </div>
+          </div>
+
+          <div class="catalog__item card-product">
+            <svg></svg>
+            <img class="card-product__pic" src="img/" alt="Сайт местечка Седона" width="" height="">
+            <div class="card-product__desc-box">
+              <h4 class="card-product__name">Sedona</h4>
+              <p class="card-product__desc">Информационный сайт для туристов</p>
+              <a class="card-product__buy-link" href="">9 900 руб.</a>
+            </div>
+          </div>
+
+          <div class="catalog__item card-product">
+            <svg></svg>
+            <img class="card-product__pic" src="img/" alt="Сайт местечка Седона" width="" height="">
+            <div class="card-product__desc-box">
+              <h4 class="card-product__name">Sedona</h4>
+              <p class="card-product__desc">Информационный сайт для туристов</p>
+              <a class="card-product__buy-link" href="">9 900 руб.</a>
+            </div>
+          </div>
+
+          <div class="catalog__item card-product">
+            <svg></svg>
+            <img class="card-product__pic" src="img/" alt="Сайт местечка Седона" width="" height="">
+            <div class="card-product__desc-box">
+              <h4 class="card-product__name">Sedona</h4>
+              <p class="card-product__desc">Информационный сайт для туристов</p>
+              <a class="card-product__buy-link" href="">9 900 руб.</a>
+            </div>
+          </div>
+
+          <div class="catalog__item card-product">
+            <svg></svg>
+            <img class="card-product__pic" src="img/" alt="Сайт местечка Седона" width="" height="">
+            <div class="card-product__desc-box">
+              <h4 class="card-product__name">Sedona</h4>
+              <p class="card-product__desc">Информационный сайт для туристов</p>
+              <a class="card-product__buy-link" href="">9 900 руб.</a>
+            </div>
+          </div>
+
+          <div class="catalog__item card-product">
+            <svg></svg>
+            <img class="card-product__pic" src="img/" alt="Сайт местечка Седона" width="" height="">
+            <div class="card-product__desc-box">
+              <h4 class="card-product__name">Sedona</h4>
+              <p class="card-product__desc">Информационный сайт для туристов</p>
+              <a class="card-product__buy-link" href="">9 900 руб.</a>
+            </div>
+          </div>
+
+          <div class="catalog__pagination pagination">
+            <ul class="pagination-list">
+              <li class="pagination__elem"><a class="pagination__link" href="">1</a></li>
+              <li class="pagination__elem"><a class="pagination__link" href="">2</a></li>
+              <li class="pagination__elem"><a class="pagination__link" href="">3</a></li>
+              <li class="pagination__elem"><a class="pagination__link pagination__link--next" href="">Следующая</a></li>
+            </ul>
+          </div>
+
+        </section>
 
       </div>
     </div>
+
+    <section class="contacts">
+      <img class="contacts__map-pic" src="" alt="191186, Санкт-Петербург,
+      ул. Б. Конюшенная, д. 19/8" width="" height="">
+      <img class="contacts__map-pointer" src="" alt="Указатель">
+
+      <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1062.9787663996383!2d37.16712875195519!3d56.738623722642764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1523977721023" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      <div class="contacts__textbox">
+        <h3 class="contacts__subtitle">Nёrds design studio</h3>
+        <p class="contacts__adress">
+          191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p class="contacts__tel">
+          тел.
+          <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+        </p>
+        <button class="contacts__btn">Напишите нам</button>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="footer">
+
+    <ul class="footer__social social-list">
+      <li class="social-list__elem">
+        <a class="social-list__link social-list__link--vk" href="">Вконтакте</a>
+      </li>
+      <li class="social-list__elem">
+        <a class="social-list__link social-list__link--fb" href="">Фейсбук</a>
+      </li>
+      <li class="social-list__elem">
+        <a class="social-list__link social-list__link--inst" href="">Инстаграмм</a>
+      </li>
+    </ul>
+
+    <p class="footer__lead">Давайте дружить, это выгодно!</p>
+    <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
+
+  </footer>
+
 </body>
 </html>
