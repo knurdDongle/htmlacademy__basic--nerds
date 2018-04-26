@@ -236,7 +236,6 @@
   </main>
 
   <footer class="footer">
-
     <ul class="footer__social social-list">
       <li class="social-list__elem">
         <a class="social-list__link social-list__link--vk" href="">Вконтакте</a>
@@ -248,11 +247,29 @@
         <a class="social-list__link social-list__link--inst" href="">Инстаграмм</a>
       </li>
     </ul>
-
     <p class="footer__lead">Давайте дружить, это выгодно!</p>
     <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
-
   </footer>
+
+  <section class="popup">
+    <p class="popup__lead">Напишите нам</p>
+    <form class="popup__write-us-form write-us-form" action="" method="post">
+      <p class="write-us-form__name">
+        <label class="write-us-form__name-label" for="name">Ваше имя:</label>
+        <input class="write-us-form__name-input" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+      </p>
+      <p class="write-us-form__email">
+        <label class="write-us-form__email-label" for="email">Ваш e-mail:</label>
+        <input class="write-us-form__email-input" type="email" name="name" id="email" placeholder="Для отправки ответа">
+      </p>
+      <p class="write-us-form__text">
+        <label class="write-us-form__text-label" for="text">Текст письма:</label>
+        <textarea class="write-us-form__text-input" name="text" id="text" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="write-us-form__button-submit" type="submit">Отправить</button>
+      <button class="write-us-form__button-close" type="button">&times;</button>
+    </form>
+  </section>
 
 </body>
 </html>
