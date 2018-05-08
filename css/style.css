@@ -48,6 +48,16 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.navigation__link--current {
+  border-bottom: 2px solid #fb565a;
+}
+
+.navigation__link--current:hover,
+.navigation__link--current:focus,
+.navigation__link--current:active {
+  color: #000000;
+}
+
 .slider {
   background-color: #eeeeee;
 }
@@ -225,7 +235,6 @@ a {
 }
 
 .social-list__link {
-
   background-color: #e1e1e1;
   border-radius: 50%;
 }
@@ -382,3 +391,111 @@ a {
   background-color: #eeeeee;
   border: none;
 }
+
+.form-filter__btn:hover,
+.form-filter__btn:focus {
+  background-color: #dfdfdf;
+}
+
+.form-filter__btn:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  outline: none;
+}
+
+.catalog__right-column {
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sorting-box__list {
+  list-style: none;
+}
+
+.sorting-box__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sorting-box__link {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-box__link:hover,
+.sorting-box__link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-box__link:active,
+.sorting-box__link--current {
+  color: #000000;
+}
+
+.sorting-box__link--to-min {
+
+}
+
+.sorting-box__link--to-min {
+
+}
+
+.card-product__name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.card-product__desc {
+  text-transform: none;
+}
+
+.card-product__buy-link {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.card-product__buy-link:hover,
+.card-product__buy-link:focus {
+  background-color: #e74246;
+}
+
+.card-product__buy-link:active {
+  background-color: #d7373b;
+}
+
+.pagination {
+  font-weight: 500;
+}
+
+.pagination__list {
+  list-style: none;
+}
+
+.pagination__link {
+  color: #000000;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.pagination__link:hover,
+.pagination__link:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination__link:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.pagination__link--current,
+.pagination__link--current:hover,
+.pagination__link--current:focus,
+.pagination__link--current:active {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+}
+
