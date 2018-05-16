@@ -153,15 +153,14 @@
       <img class="contacts__map-pic" src="img/compressor/map-compressor.jpg" alt="191186, Санкт-Петербург,
       ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
 
-      <div class="contacts__textbox wrapper">
+      <div class="contacts__textbox">
         <h3 class="contacts__subtitle">Nёrds design studio</h3>
         <p class="contacts__adress">
           191186, Санкт-Петербург,
           ул. Б. Конюшенная, д. 19/8
         </p>
         <p class="contacts__tel">
-          тел.
-          <a class="contacts__tel-link" href="tel:+78122757575">+7 (812) 275-75-75</a>
+          <a class="contacts__tel-link" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
         </p>
         <button class="contacts__btn" type="button">Напишите нам</button>
       </div>
@@ -170,6 +169,7 @@
   </main>
 
   <footer class="footer wrapper">
+
     <ul class="footer__social social-list">
       <li class="social-list__elem">
         <a class="social-list__link social-list__link--vk" href="">Вконтакте</a>
@@ -181,28 +181,40 @@
         <a class="social-list__link social-list__link--inst" href="">Инстаграмм</a>
       </li>
     </ul>
-    <p class="footer__lead">Давайте дружить, это выгодно!</p>
-    <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
+
+    <div class="footer__text">
+      <p class="footer__lead">Давайте дружить, это выгодно!</p>
+      <p class="footer__discount">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+
   </footer>
 
   <section class="popup">
+
     <p class="popup__lead">Напишите нам</p>
+
     <form class="popup__write-us-form write-us-form" action="" method="post">
+
       <p class="write-us-form__name">
         <label class="write-us-form__label" for="name">Ваше имя:</label>
         <input class="write-us-form__input" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" minlength="2">
       </p>
+
       <p class="write-us-form__email">
         <label class="write-us-form__label" for="email">Ваш e-mail:</label>
         <input class="write-us-form__input" type="email" name="name" id="email" placeholder="Для отправки ответа">
       </p>
+
       <p class="write-us-form__text">
         <label class="write-us-form__label" for="text">Текст письма:</label>
         <textarea class="write-us-form__input" name="text" id="text" rows="10" placeholder="В свободной форме"></textarea>
       </p>
+
       <button class="write-us-form__button-submit" type="submit">Отправить</button>
       <button class="write-us-form__button-close" type="button">&times;</button>
+
     </form>
+
   </section>
 
 </body>
