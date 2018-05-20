@@ -12,7 +12,7 @@
 
   <header class="header">
 
-    <nav class="header__nav navigation">
+    <nav class="header__nav navigation wrapper">
 
       <div class="navigation__logo">
         <a class="navigation__logo-link header__logo-link--current" href="index.html">
@@ -36,19 +36,20 @@
         </li>
       </ul>
 
+      <div class="header__basket">
+        <a class="header__basket-link" href="#">Корзина</a>
+      </div>
+
     </nav>
-
-    <div class="header__basket">
-      <a class="header__basket-link" href="#">Корзина</a>
-    </div>
-
   </header>
 
   <main class="catalog">
 
-    <h1 class="catalog__title">Магазин готовых шаблонов</h1>
+    <div class="catalog__title-container">
+      <h1 class="catalog__title wrapper">Магазин готовых шаблонов</h1>
+    </div>
 
-    <div class="catalog__container">
+    <div class="catalog__container wrapper">
 
       <div class="catalog__left-column">
         <h2 class="catalog__subtitle visually-hidden">Фильтр работ</h2>
@@ -117,7 +118,7 @@
         <h2 class="catalog__subtitle visually-hidden">Примеры работ</h2>
 
         <section class="catalog__sort-links sorting-box">
-          <h3 class="sorting-box__title">Сортировать</h3>
+          <h3 class="sorting-box__title">Сортировать:</h3>
 
           <ul class="sorting-box__list">
             <li class="sorting-box__elem">
@@ -141,7 +142,6 @@
         <section class="catalog__products">
 
           <div class="catalog__item card-product">
-            <svg></svg>
             <img class="card-product__pic" src="img/compressor/img-sedona-compressor.jpg" alt="Сайт местечка Седона" width="360" height="576">
             <div class="card-product__desc-box">
               <h4 class="card-product__name">Sedona</h4>
@@ -151,7 +151,6 @@
           </div>
 
           <div class="catalog__item card-product">
-            <svg></svg>
             <img class="card-product__pic" src="img/compressor/img-pink-compressor.jpg" alt="Сайт местечка Седона" width="360" height="576">
             <div class="card-product__desc-box">
               <h4 class="card-product__name">Pink App</h4>
@@ -161,7 +160,7 @@
           </div>
 
           <div class="catalog__item card-product">
-            <svg></svg>
+
             <img class="card-product__pic" src="img/compressor/img-barbershop-compressor.jpg" alt="Сайт местечка Седона" width="360" height="576">
             <div class="card-product__desc-box">
               <h4 class="card-product__name">Barbershop</h4>
@@ -171,7 +170,7 @@
           </div>
 
           <div class="catalog__item card-product">
-            <svg></svg>
+
             <img class="card-product__pic" src="img/compressor/img-mishka-compressor.jpg" alt="Сайт местечка Седона" width="360" height="576">
             <div class="card-product__desc-box">
               <h4 class="card-product__name">Mishka</h4>
@@ -181,7 +180,7 @@
           </div>
 
           <div class="catalog__item card-product">
-            <svg></svg>
+
             <img class="card-product__pic" src="img/compressor/img-aplus-compressor.jpg" alt="Сайт местечка Седона" width="360" height="576">
             <div class="card-product__desc-box">
               <h4 class="card-product__name">A Plus</h4>
@@ -191,7 +190,7 @@
           </div>
 
           <div class="catalog__item card-product">
-            <svg></svg>
+
             <img class="card-product__pic" src="img/compressor/img-kvast-compressor.jpg" alt="Сайт местечка Седона" width="360" height="576">
             <div class="card-product__desc-box">
               <h4 class="card-product__name">Кваст</h4>
