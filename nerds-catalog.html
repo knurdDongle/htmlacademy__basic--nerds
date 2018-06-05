@@ -87,47 +87,58 @@
 
           <fieldset class="form-filter__layout-field">
 
-            <legend class="form-filter__subtitle">Сетка:</legend>
+            <legend class="form-filter__subtitle form-filter__subtitle--layout">Сетка:</legend>
 
             <div class="form-filter__layout">
-              <p class="form-filter__adaptive">
-                <label class="form-filter__label-adaptive" for="adaptive">Адаптивный</label>
-                <input type="radio" id="adaptive" name="layout" value="adaptive" checked>
+              <p class="form-filter__radio-box">
+                <label class="form-filter__label" for="adaptive">Адаптивная</label>
+                <input class="form-filter__radio" type="radio" id="adaptive" name="layout" value="adaptive" checked>
               </p>
-              <p class="form-filter__fix">
-                <label class="form-filter__label-fix" for="fix">Фиксированная</label>
-                <input type="radio" id="fix" name="layout" value="fix">
+              <p class="form-filter__radio-box">
+                <label class="form-filter__label" for="fix">Фиксированная</label>
+                <input class="form-filter__radio" type="radio" id="fix" name="layout" value="fix">
               </p>
-              <p class="form-filter__rubber">
-                <label class="form-filter__label-rubber" for="rubber">Резиновая</label>
-                <input type="radio" id="rubber" name="layout" value="rubber">
+              <p class="form-filter__radio-box">
+                <label class="form-filter__label" for="rubber">Резиновая</label>
+                <input class="form-filter__radio" type="radio" id="rubber" name="layout" value="rubber">
               </p>
             </div>
 
           </fieldset>
 
           <fieldset class="form-filter__features-field">
-            <legend class="form-filter__subtitle">Особенности:</legend>
-            <p class="form-filter__slider-feature">
-              <label class="form-filter__label-slider" for="slider">Слайдер</label>
-              <input type="checkbox" id="slider" name="slider" checked>
-            </p>
-            <p class="form-filter__advantage-feature">
-              <label class="form-filter__label-advantage" for="advantage">Блок преимуществ</label>
-              <input type="checkbox" id="advantage" name="advantage">
-            </p>
-            <p class="form-filter__news-feature">
-              <label class="form-filter__label-news" for="news">Новости</label>
-              <input type="checkbox" id="news" name="news" checked>
-            </p>
-            <p class="form-filter__gallery-feature">
-              <label class="form-filter__label-gallery" for="gallery">Галерея</label>
-              <input type="checkbox" id="gallery" name="gallery">
-            </p>
-            <p class="form-filter__basket-feature">
-              <label class="form-filter__label-basket" for="basket">Корзина</label>
-              <input type="checkbox" id="basket" name="basket">
-            </p>
+
+            <legend class="form-filter__subtitle form-filter__subtitle--features">Особенности:</legend>
+
+            <div class="form-filter__features">
+
+              <p class="form-filter__feature">
+                <label class="form-filter__label" for="slider">Слайдер</label>
+                <input class="form-filter__checkbox" type="checkbox" id="slider" name="slider" checked>
+              </p>
+
+              <p class="form-filter__feature">
+                <label class="form-filter__label" for="advantage">Блок преимуществ</label>
+                <input class="form-filter__checkbox" type="checkbox" id="advantage" name="advantage">
+              </p>
+
+              <p class="form-filter__feature">
+                <label class="form-filter__label" for="news">Новости</label>
+                <input class="form-filter__checkbox" type="checkbox" id="news" name="news" checked>
+              </p>
+
+              <p class="form-filter__feature">
+                <label class="form-filter__label" for="gallery">Галерея</label>
+                <input class="form-filter__checkbox" type="checkbox" id="gallery" name="gallery">
+              </p>
+
+              <p class="form-filter__feature">
+                <label class="form-filter__label" for="basket">Корзина</label>
+                <input class="form-filter__checkbox" type="checkbox" id="basket" name="basket">
+              </p>
+
+            </div>
+
           </fieldset>
 
           <button class="form-filter__btn" type="submit">Показать</button>
@@ -142,91 +153,155 @@
           <h3 class="sorting-box__title">Сортировать:</h3>
 
           <ul class="sorting-box__list">
-            <li class="sorting-box__elem">
+
+            <li class="sorting-box__elem sorting-box__elem--price">
               <a class="sorting-box__link sorting-box__link--current" href="">По цене</a>
             </li>
-            <li class="sorting-box__elem">
+
+            <li class="sorting-box__elem sorting-box__elem--type">
               <a class="sorting-box__link" href="">По типу</a>
             </li>
-            <li class="sorting-box__elem">
+
+            <li class="sorting-box__elem sorting-box__elem--name">
               <a class="sorting-box__link" href="">По названию</a>
             </li>
-            <li class="sorting-box__elem">
-              <a class="sorting-box__link sorting-box__link--to-min" href="">По убыванию</a>
-            </li>
-            <li class="sorting-box__elem">
-              <a class="sorting-box__link sorting-box__link--to-max" href="">По возрастанию</a>
-            </li>
+
           </ul>
+
+          <ul class="sorting-box__to-min-to-max">
+
+            <li class="sorting-box__elem sorting-box__elem--to-min">
+              <a class="sorting-box__link sorting-box__link--to-min sorting-box__link--current" href="">
+                <span class="visually-hidden">По убыванию</span>
+              </a>
+            </li>
+
+            <li class="sorting-box__elem sorting-box__elem--to-max">
+              <a class="sorting-box__link sorting-box__link--to-max" href="">
+                  <span class="visually-hidden">По возрастанию</span>
+              </a>
+            </li>
+
+          </ul>
+
         </section>
 
         <section class="catalog__products">
 
           <div class="catalog__item card-product">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+
             <img class="card-product__pic" src="img/compressor/img-sedona-compressor.jpg" alt="Сайт местечка Седона" width="360" height="576">
+
             <div class="card-product__desc-box">
               <h4 class="card-product__name">Sedona</h4>
-              <p class="card-product__desc">Информационный сайт для туристов</p>
+              <p class="card-product__desc">
+                Информационный сайт <br>
+                для туристов
+              </p>
               <a class="card-product__buy-link" href="">9 900 руб.</a>
             </div>
+
           </div>
 
           <div class="catalog__item card-product">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+
             <img class="card-product__pic" src="img/compressor/img-pink-compressor.jpg" alt="Сайт местечка Седона" width="360" height="576">
+
             <div class="card-product__desc-box">
               <h4 class="card-product__name">Pink App</h4>
-              <p class="card-product__desc">Продуктовый лендинг приложения для iOS и Android</p>
+              <p class="card-product__desc">
+                Продуктовый лендинг приложения для iOS и Android
+              </p>
               <a class="card-product__buy-link" href="">9 900 руб.</a>
             </div>
+
           </div>
 
           <div class="catalog__item card-product">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
 
             <img class="card-product__pic" src="img/compressor/img-barbershop-compressor.jpg" alt="Сайт местечка Седона" width="360" height="576">
-            <div class="card-product__desc-box">
+
+            <div class="card-product__desc-box card-product__desc-box--second-line">
               <h4 class="card-product__name">Barbershop</h4>
-              <p class="card-product__desc">Сайт салона красоты. Для мужчин, да.</p>
+              <p class="card-product__desc">
+                Сайт салона красоты. <br>
+                Для мужчин, да.
+              </p>
               <a class="card-product__buy-link" href="">9 900 руб.</a>
             </div>
+
           </div>
 
           <div class="catalog__item card-product">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
 
             <img class="card-product__pic" src="img/compressor/img-mishka-compressor.jpg" alt="Сайт местечка Седона" width="360" height="576">
-            <div class="card-product__desc-box">
+
+            <div class="card-product__desc-box card-product__desc-box--second-line">
               <h4 class="card-product__name">Mishka</h4>
-              <p class="card-product__desc">Интернет-магазин вязаных игрушек</p>
+              <p class="card-product__desc">
+                Интернет-магазин <br>
+                вязаных игрушек
+              </p>
               <a class="card-product__buy-link" href="">9 900 руб.</a>
             </div>
+
           </div>
 
           <div class="catalog__item card-product">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
 
             <img class="card-product__pic" src="img/compressor/img-aplus-compressor.jpg" alt="Сайт местечка Седона" width="360" height="576">
-            <div class="card-product__desc-box">
+
+            <div class="card-product__desc-box
+            card-product__desc-box--third-line">
               <h4 class="card-product__name">A Plus</h4>
-              <p class="card-product__desc">Лендинг курсов повышения квалификации</p>
+              <p class="card-product__desc">
+                Лендинг курсов повышения квалификации
+              </p>
               <a class="card-product__buy-link" href="">9 900 руб.</a>
             </div>
+
           </div>
 
           <div class="catalog__item card-product">
 
+            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+
             <img class="card-product__pic" src="img/compressor/img-kvast-compressor.jpg" alt="Сайт местечка Седона" width="360" height="576">
-            <div class="card-product__desc-box">
+
+            <div class="card-product__desc-box card-product__desc-box--third-line">
               <h4 class="card-product__name">Кваст</h4>
-              <p class="card-product__desc">Промо-сайт производителя крафтового кваса</p>
+              <p class="card-product__desc">
+                Промо-сайт производителя крафтового кваса
+              </p>
               <a class="card-product__buy-link" href="">9 900 руб.</a>
             </div>
+
           </div>
 
           <div class="catalog__pagination pagination">
+
             <ul class="pagination__list">
+
               <li class="pagination__elem"><a class="pagination__link pagination__link--current" href="">1</a></li>
+
               <li class="pagination__elem"><a class="pagination__link" href="">2</a></li>
+
               <li class="pagination__elem"><a class="pagination__link" href="">3</a></li>
+
               <li class="pagination__elem"><a class="pagination__link pagination__link--next" href="">Следующая</a></li>
+
             </ul>
+
           </div>
 
         </section>
@@ -235,22 +310,22 @@
     </div>
 
     <section class="contacts">
-      <img class="contacts__map-pic" src="img/compressor/map-compressor.jpg" alt="191186, Санкт-Петербург,
-      ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
 
-      <div class="contacts__textbox">
-        <h3 class="contacts__subtitle">Nёrds design studio</h3>
-        <p class="contacts__adress">
-          191186, Санкт-Петербург,
-          ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p class="contacts__tel">
-          тел.
-          <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-        </p>
-        <button class="contacts__btn">Напишите нам</button>
-      </div>
-    </section>
+        <img class="contacts__map-pic" src="img/compressor/map-compressor.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
+
+        <div class="contacts__textbox">
+          <h3 class="contacts__subtitle">Nёrds design studio</h3>
+          <p class="contacts__adress">
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p class="contacts__tel">
+            <a class="contacts__tel-link" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          </p>
+          <button class="contacts__btn" type="button">Напишите нам</button>
+        </div>
+
+      </section>
 
   </main>
 
