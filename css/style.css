@@ -967,7 +967,6 @@ img {
   justify-content: space-between;
   align-items: baseline;
 
-
   margin: 0;
   padding: 0;
 }
@@ -1016,17 +1015,32 @@ input[type='number'] {
 
 .form-filter__layout {
   padding-top: 16px;
-  padding-left: 36px;
 }
 
 .form-filter__radio-box {
+  position: relative;
+
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+  padding-left: 36px;
+}
+
+.form-filter__label {
+  cursor: pointer;
+}
+
+.form-filter__label--radio:hover,
+.form-filter__label--radio:focus {
+  color: #000000;
 }
 
 .form-filter__radio {
   display: none;
+}
+
+.form-filter__radio-indicator {
+
 }
 
 .form-filter__features-field {
