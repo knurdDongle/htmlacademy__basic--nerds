@@ -27,7 +27,9 @@ img {
   padding: 0 20px;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -1014,33 +1016,60 @@ input[type='number'] {
 }
 
 .form-filter__layout {
+  margin: 0;
   padding-top: 16px;
 }
 
-.form-filter__radio-box {
+.form-filter__label {
   position: relative;
 
-  margin: 0;
+  display: block;
   margin-bottom: 20px;
-  padding: 0;
   padding-left: 36px;
-}
 
-.form-filter__label {
   cursor: pointer;
 }
 
-.form-filter__label--radio:hover,
-.form-filter__label--radio:focus {
+.form-filter__label:hover {
   color: #000000;
 }
 
-.form-filter__radio {
-  display: none;
+.form-filter__radio-indicator {
+  position: absolute;
+  top: -3px;
+  left: 1px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/svg/radio-off.svg");
+  opacity: 0.4;
 }
 
-.form-filter__radio-indicator {
+.form-filter__label:hover .form-filter__radio-indicator,
+.form-filter__label:hover .form-filter__checkbox-indicator {
+  opacity: 1;
+}
 
+.form-filter__radio:disabled + .form-filter__radio-indicator,
+.form-filter__checkbox:disabled + .form-filter__checkbox-indicator {
+  opacity: 0.1;
+}
+
+.form-filter__radio:disabled ~ .form-filter__text,
+.form-filter__checkbox:disabled ~ .form-filter__text {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form-filter__radio:focus + .form-filter__radio-indicator,
+.form-filter__checkbox:focus + .form-filter__checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.form-filter__radio:checked + .form-filter__radio-indicator {
+  background-image: url("../img/svg/radio-on.svg");
 }
 
 .form-filter__features-field {
@@ -1048,18 +1077,27 @@ input[type='number'] {
 }
 
 .form-filter__features {
-  padding-top: 16px;
-  padding-left: 36px;
-}
-
-.form-filter__feature {
   margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
+  padding-top: 16px;
 }
 
-.form-filter__checkbox {
-  display: none;
+.form-filter__checkbox-indicator {
+  position: absolute;
+  top: -2px;
+  left: 1px;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/svg/checkbox-off.svg");
+
+  opacity: 0.4;
+}
+
+.form-filter__checkbox:checked + .form-filter__checkbox-indicator {
+  width: 27px;
+
+  background-image: url("../img/svg/checkbox-on.svg");
 }
 
 .form-filter__btn {
