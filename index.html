@@ -50,9 +50,9 @@
       <div class="slider-wrapper wrapper">
 
         <div class="slider__controls">
-          <button class="slider__btn slider__btn--current"><span class="visually-hidden">Первый слайд</span></button>
-          <button class="slider__btn"><span class="visually-hidden">Второй слайд</span></button>
-          <button class="slider__btn"><span class="visually-hidden">Третий слайд</span></button>
+          <button class="slider__btn slider__btn--current" onclick="currentSlide(1)"><span class="visually-hidden">Первый слайд</span></button>
+          <button class="slider__btn" onclick="currentSlide(2)"><span class="visually-hidden">Второй слайд</span></button>
+          <button class="slider__btn" onclick="currentSlide(3)"><span class="visually-hidden">Третий слайд</span></button>
         </div>
 
         <div class="slider__element slider__element--slide1 slide slider__element--current">
@@ -183,19 +183,27 @@
         <ul class="clients__list">
 
           <li class="clients__elem">
-            <img src="img/compressor/html-academy-compressor.png" alt="Сайт htmlacademy" width="199 " height="68">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/compressor/html-academy-compressor.png" alt="Сайт htmlacademy" width="199 " height="68">
+            </a>
           </li>
 
           <li class="clients__elem">
-            <img src="img/compressor/borodinski-compressor.png" alt="Барбершоп Бородинский" width="209" height="90">
+            <a href="#">
+              <img src="img/compressor/borodinski-compressor.png" alt="Барбершоп Бородинский" width="209" height="90">
+            </a>
           </li>
 
           <li class="clients__elem">
-            <img src="img/compressor/pink-compressor.png" alt="Сайт приложения Пинк" width="185" height="52">
+            <a href="#">
+              <img src="img/compressor/pink-compressor.png" alt="Сайт приложения Пинк" width="185" height="52">
+            </a>
           </li>
 
           <li class="clients__elem">
-            <img src="img/compressor/mishka-compressor.png" alt="Сайт магазина Мишка" width="173" height="84">
+            <a href="#">
+              <img src="img/compressor/mishka-compressor.png" alt="Сайт магазина Мишка" width="173" height="84">
+            </a>
           </li>
         </ul>
       </section>
@@ -215,7 +223,7 @@
         <p class="contacts__tel">
           <a class="contacts__tel-link" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
         </p>
-        <button class="contacts__btn" type="button">Напишите нам</button>
+        <a class="contacts__link" href="#">Напишите нам</a>
       </div>
 
     </section>
@@ -264,17 +272,17 @@
 
       <p class="write-us-form__name">
         <label class="write-us-form__label" for="name">Ваше имя:</label>
-        <input class="write-us-form__input" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" minlength="2">
+        <input class="write-us-form__input" type="text" name="user-name" id="name" placeholder="Представьтесь, пожалуйста" minlength="2">
       </p>
 
       <p class="write-us-form__email">
         <label class="write-us-form__label" for="email">Ваш e-mail:</label>
-        <input class="write-us-form__input" type="email" name="name" id="email" placeholder="Для отправки ответа">
+        <input class="write-us-form__input" type="email" name="email" id="email" placeholder="Для отправки ответа">
       </p>
 
       <p class="write-us-form__text">
         <label class="write-us-form__label" for="text">Текст письма:</label>
-        <textarea class="write-us-form__input write-us-form__input--textarea" name="text" id="text" placeholder="В свободной форме"></textarea>
+        <textarea class="write-us-form__input write-us-form__input--textarea" name="text" id="text" placeholder="В свободной форме" minlength="140"></textarea>
       </p>
 
       <button class="write-us-form__button-submit" type="submit">Отправить</button>
@@ -284,6 +292,9 @@
     <button class="popup__close" type="button">&times;</button>
 
   </section>
+
+  <script src="js/popup.js"></script>
+  <script src="js/slider.js"></script>
 
 </body>
 </html>
