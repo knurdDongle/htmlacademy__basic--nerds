@@ -552,8 +552,10 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   box-sizing: border-box;
-  width: 1200px;
+  width: 98vw;
+  max-width: 1440px;
   height: 416px;
+
   margin: 0 auto;
 
   line-height: 18px;
@@ -565,7 +567,16 @@ input[type="radio"].visually-hidden {
 .contacts__map-pic {
   position: absolute;
   top: 0px;
-  left: -120px;
+
+  z-index: 2;
+
+  max-width: 1440px;
+}
+
+.contacts__map-iframe {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
 
   max-width: 1440px;
 }
@@ -574,8 +585,10 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 54px;
   left: 20px;
+  z-index: 4;
 
   width: 319px;
+
 
   background-color: #ffffff;
 }
